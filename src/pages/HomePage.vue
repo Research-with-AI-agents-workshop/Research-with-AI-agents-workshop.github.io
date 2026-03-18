@@ -44,7 +44,7 @@ const nextEvent = computed(() => {
       <div class="mt-12">
         <h2 class="text-2xl font-bold mb-4">About the Series</h2>
         <p class="leading-relaxed">
-          The Research with AI Agents Workshop Series brings together researchers to discuss how AI agents — from coding assistants to autonomous research tools — are reshaping academic workflows. Each session features a speaker sharing their experiences, followed by open discussion.
+          The Research with AI Agents Workshop Series brings together researchers to discuss how AI agents, from coding assistants to autonomous research tools, are reshaping academic workflows. Each session features a speaker sharing their experiences, followed by open discussion.
         </p>
         <RouterLink to="/about" class="btn btn-primary btn-sm mt-4">
           Learn More
