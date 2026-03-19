@@ -10,6 +10,16 @@ const props = defineProps({
   }
 })
 
+function linkIcon(label) {
+  const l = label.toLowerCase()
+  if (l.includes('google scholar')) return ['fab', 'google-scholar']
+  if (l.includes('linkedin')) return ['fab', 'linkedin']
+  if (l.includes('github')) return ['fab', 'github']
+  if (l.includes('personal website')) return ['fas', 'globe']
+  if (l.includes('review') || l.includes('paper')) return ['fas', 'file-lines']
+  return ['fas', 'link']
+}
+
 function formatDate(dateStr) {
   const date = new Date(dateStr + 'T00:00:00')
   return date.toLocaleDateString('en-US', {
@@ -45,7 +55,7 @@ function formatDate(dateStr) {
       <p v-if="event.bio" class="mt-2 text-sm italic opacity-80">{{ event.bio }}</p>
       <div v-if="event.links && Object.keys(event.links).length" class="card-actions justify-end mt-4">
         <a v-for="(url, label) in event.links" :key="label" :href="url" target="_blank" class="btn btn-sm btn-outline btn-primary">
-          {{ label }}
+          <font-awesome-icon :icon="linkIcon(label)" class="mr-1" />{{ label }}
         </a>
       </div>
     </div>
