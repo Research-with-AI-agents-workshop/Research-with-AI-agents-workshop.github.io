@@ -44,10 +44,10 @@
         The workshop series is currently organized by Kaicheng Yang and the speakers are mainly his colleagues and friends.
       </p>
       <p>
-        However, if you are interested in giving a talk or suggesting a topic, please reach out to Kaicheng Yang (yang3kc@gmail.com).
+        If you are interested in giving a talk or suggesting a topic, please reach out to Kaicheng Yang (yang3kc@gmail.com).
       </p>
       <p>
-        Please also reach out to Kaicheng Yang if you are interested organizing the workshop series.
+        Please also reach out to Kaicheng Yang if you are interested in co-organizing the workshop series.
       </p>
     </div>
   </div>
