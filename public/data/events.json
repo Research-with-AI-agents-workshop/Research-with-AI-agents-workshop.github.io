@@ -6,8 +6,15 @@
     "time": "10:00\u201311:00 AM ET",
     "title": "Vibe Research: Framework, Trust, and Collaboration",
     "abstract": "The emergence of Vibe Coding has significantly impacted the programming landscape. Analogously, we are witnessing the rise of what might be called \"Vibe Research\" \u2014 a paradigm where researchers increasingly leverage AI agents throughout the research lifecycle, from ideation and literature review to data analysis and manuscript preparation. This talk proposes a preliminary framework for understanding Vibe Research, examining its potential benefits such as accelerated discovery and enhanced creativity, alongside critical challenges including issues of trust, verification, reproducibility, and the evolving nature of human-AI collaboration in knowledge creation. We will discuss practical strategies for researchers looking to responsibly integrate AI agents into their workflows while maintaining scientific rigor.",
-    "bio": "",
+    "bio": "Yanbo Zhang completed his undergraduate studies in Condensed Matter Physics at the University of Science and Technology of China (USTC) and earned his PhD in Complex Systems from Arizona State University. His doctoral research focused on complex systems, complex networks, and machine learning, with a particular emphasis on Science for AI — identifying methods and analogies from established scientific disciplines to advance artificial intelligence. He is currently a postdoctoral researcher at Tufts University, where he continues to explore artificial intelligence and investigate various forms of intelligence.",
     "location": "Email Kaicheng Yang (yang3kc@gmail.com) for the Zoom link",
-    "links": {}
+    "links": {
+      "Personal Website": "https://zhangyanbo.github.io/Zhangyanbo/en/blog/",
+      "Google Scholar": "https://scholar.google.com/citations?user=yByYe24AAAAJ&hl=zh-CN",
+      "LinkedIn": "https://www.linkedin.com/in/zhang-yanbo-57b690101/",
+      "Vibe Research (GitHub)": "https://github.com/Zhangyanbo/vibe-research-skill",
+      "Vibe Writing (GitHub)": "https://github.com/Zhangyanbo/vibe-paper-writing",
+      "LLM for Science Review": "https://www.nature.com/articles/s44387-025-00019-5"
+    }
   }
 ]
