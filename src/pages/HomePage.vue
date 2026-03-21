@@ -12,9 +12,17 @@ onMounted(async () => {
 const nextEvent = computed(() => {
   const today = new Date().toISOString().split('T')[0]
   const upcoming = events.value
-    .filter(e => e.date >= today)
+    .filter(e => e.date > today)
     .sort((a, b) => a.date.localeCompare(b.date))
-  return upcoming[0] || events.value[0]
+  return upcoming[0]
+})
+
+const latestPastEvent = computed(() => {
+  const today = new Date().toISOString().split('T')[0]
+  const past = events.value
+    .filter(e => e.date <= today)
+    .sort((a, b) => b.date.localeCompare(a.date))
+  return past[0]
 })
 </script>
 
@@ -38,6 +46,10 @@ const nextEvent = computed(() => {
       <div v-if="nextEvent">
         <h2 class="text-2xl font-bold mb-6">Upcoming Talk</h2>
         <EventCard :event="nextEvent" :featured="true" />
+      </div>
+      <div v-else-if="latestPastEvent">
+        <h2 class="text-2xl font-bold mb-6">Latest Talk</h2>
+        <EventCard :event="latestPastEvent" />
       </div>
 
       <!-- About Blurb -->

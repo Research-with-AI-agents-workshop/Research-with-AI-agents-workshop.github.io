@@ -15,6 +15,7 @@ function linkIcon(label) {
   if (l.includes('google scholar')) return ['fab', 'google-scholar']
   if (l.includes('linkedin')) return ['fab', 'linkedin']
   if (l.includes('github')) return ['fab', 'github']
+  if (l.includes('slides')) return ['fas', 'file-powerpoint']
   if (l.includes('personal website')) return ['fas', 'globe']
   if (l.includes('review') || l.includes('paper')) return ['fas', 'file-lines']
   return ['fas', 'link']

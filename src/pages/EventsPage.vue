@@ -12,14 +12,14 @@ onMounted(async () => {
 const upcoming = computed(() => {
   const today = new Date().toISOString().split('T')[0]
   return events.value
-    .filter(e => e.date >= today)
+    .filter(e => e.date > today)
     .sort((a, b) => a.date.localeCompare(b.date))
 })
 
 const past = computed(() => {
   const today = new Date().toISOString().split('T')[0]
   return events.value
-    .filter(e => e.date < today)
+    .filter(e => e.date <= today)
     .sort((a, b) => b.date.localeCompare(a.date))
 })
 </script>
