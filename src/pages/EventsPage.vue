@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
-import EventCard from '@/components/EventCard.vue'
 
 const events = ref([])
 
@@ -22,6 +21,15 @@ const past = computed(() => {
     .filter(e => e.date <= today)
     .sort((a, b) => b.date.localeCompare(a.date))
 })
+
+function formatDate(dateStr) {
+  const date = new Date(dateStr + 'T00:00:00')
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  })
+}
 </script>
 
 <template>
@@ -30,15 +38,41 @@ const past = computed(() => {
 
     <div v-if="upcoming.length">
       <h2 class="text-xl font-semibold mb-4 text-primary">Upcoming</h2>
-      <div class="space-y-6 mb-12">
-        <EventCard v-for="event in upcoming" :key="event.id" :event="event" :featured="true" />
+      <div class="space-y-3 mb-12">
+        <RouterLink
+          v-for="event in upcoming"
+          :key="event.id"
+          :to="`/events/${event.id}`"
+          class="block card bg-base-100 shadow border-2 border-primary hover:shadow-lg transition-shadow"
+        >
+          <div class="card-body py-4 px-6">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+              <span class="text-sm opacity-70 whitespace-nowrap">{{ formatDate(event.date) }}</span>
+              <span class="font-semibold text-primary">{{ event.speaker }}</span>
+            </div>
+            <p class="text-lg font-medium mt-1">{{ event.title }}</p>
+          </div>
+        </RouterLink>
       </div>
     </div>
 
     <div v-if="past.length">
       <h2 class="text-xl font-semibold mb-4">Past Events</h2>
-      <div class="space-y-6">
-        <EventCard v-for="event in past" :key="event.id" :event="event" />
+      <div class="space-y-3">
+        <RouterLink
+          v-for="event in past"
+          :key="event.id"
+          :to="`/events/${event.id}`"
+          class="block card bg-base-100 shadow hover:shadow-lg transition-shadow"
+        >
+          <div class="card-body py-4 px-6">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+              <span class="text-sm opacity-70 whitespace-nowrap">{{ formatDate(event.date) }}</span>
+              <span class="font-semibold text-primary">{{ event.speaker }}</span>
+            </div>
+            <p class="text-lg font-medium mt-1">{{ event.title }}</p>
+          </div>
+        </RouterLink>
       </div>
     </div>
 

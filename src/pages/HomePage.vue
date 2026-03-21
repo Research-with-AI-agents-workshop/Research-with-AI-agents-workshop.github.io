@@ -46,10 +46,22 @@ const latestPastEvent = computed(() => {
       <div v-if="nextEvent">
         <h2 class="text-2xl font-bold mb-6">Upcoming Talk</h2>
         <EventCard :event="nextEvent" :featured="true" />
+        <div class="mt-4 text-right">
+          <RouterLink :to="`/events/${nextEvent.id}`" class="btn btn-primary btn-sm">
+            View Details
+            <font-awesome-icon :icon="['fas', 'arrow-right']" class="ml-1" />
+          </RouterLink>
+        </div>
       </div>
       <div v-else-if="latestPastEvent">
         <h2 class="text-2xl font-bold mb-6">Latest Talk</h2>
         <EventCard :event="latestPastEvent" />
+        <div class="mt-4 text-right">
+          <RouterLink :to="`/events/${latestPastEvent.id}`" class="btn btn-primary btn-sm">
+            View Details
+            <font-awesome-icon :icon="['fas', 'arrow-right']" class="ml-1" />
+          </RouterLink>
+        </div>
       </div>
 
       <!-- About Blurb -->
