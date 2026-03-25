@@ -49,6 +49,26 @@
       <p>
         Please also reach out to Kaicheng Yang if you are interested in co-organizing the workshop series.
       </p>
+
+      <h2>Stay Connected</h2>
+      <p>Follow the organizer on social media for updates on upcoming sessions and related content.</p>
+      <div class="not-prose flex flex-wrap gap-4 mt-4">
+        <a href="https://twitter.com/yang3kc" target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline btn-sm gap-2">
+          <font-awesome-icon :icon="['fab', 'twitter']" />
+          Twitter/X
+        </a>
+        <a href="https://bsky.app/profile/yang3kc.bsky.social" target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline btn-sm gap-2">
+          <font-awesome-icon :icon="['fab', 'bluesky']" />
+          Bluesky
+        </a>
+        <a href="https://www.linkedin.com/in/kaicheng-yang-43477213b/" target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline btn-sm gap-2">
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
+          LinkedIn
+        </a>
+      </div>
     </div>
   </div>
 </template>
