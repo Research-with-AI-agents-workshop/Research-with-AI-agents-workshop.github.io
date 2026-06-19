@@ -17,5 +17,19 @@
       "Slides": "/slides/vibe-research-trust-collaboration.pdf",
       "LLM for Science Review": "https://www.nature.com/articles/s44387-025-00019-5"
     }
+  },
+  {
+    "id": "2026-06-29-byungkyu-lee",
+    "speaker": "Byungkyu Lee",
+    "date": "2026-06-29",
+    "time": "10:00–11:00 AM ET",
+    "title": "Using Coding Agents as Research Tools: A Plan-Based Workflow for the Age of Generative AI",
+    "abstract": "Automation in scientific research is rapidly advancing through generative AI agents, raising important questions about the role of researchers in this new landscape. In this talk, I propose a plan-based workflow for collaborating with AI coding agents and human collaborators alike. Such workflows can expand our ability to explore data, generate research ideas, and iterate on analyses, while also making it easier to verify, document, and evaluate what AI agents produce. Drawing on practical examples, this session will offer concrete strategies for integrating coding agents into research workflows as effective and accountable tools rather than autonomous substitutes for scholarly judgment.",
+    "bio": "Byungkyu (BK) Lee is an Associate Professor of Sociology at New York University, and a co-Director of Networks in Context lab. He studies social cohesion and network dynamics, exploring their impacts on individual, community, and societal well-beings in the domains of health and politics. He is also interested in using large language models, surveys, and social media data to develop indicators of social cohesion and polarization, predict public opinion, and simulate AI agents for advancing social science research.",
+    "location": "Email Kaicheng Yang (yang3kc@gmail.com) for the Zoom link",
+    "links": {
+      "Personal Website": "https://www.byungkyulee.com/",
+      "GitHub": "https://github.com/letitbk/claude-academic-setup/"
+    }
   }
 ]
