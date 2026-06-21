@@ -28,3 +28,14 @@ import { RouterLink } from 'vue-router'
     </div>
   </div>
 </template>
+
+<style>
+/* Override DaisyUI's dark active/focus state on navbar menu links */
+.navbar .menu li > a:hover,
+.navbar .menu li > a:focus,
+.navbar .menu li > a:active,
+.navbar .menu li > a.router-link-active {
+  background-color: #0891b2 !important;
+  color: #ffffff !important;
+}
+</style>
