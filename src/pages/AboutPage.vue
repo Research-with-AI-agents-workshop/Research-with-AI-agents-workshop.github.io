@@ -63,6 +63,21 @@
                 Please also reach out to Kai-Cheng Yang if you are interested in
                 co-organizing the workshop series.
             </p>
+            <p>
+                The easiest way to stay in the loop and receive Zoom links for upcoming sessions
+                is to join our Google Group mailing list.
+            </p>
+            <div class="not-prose mt-2">
+                <a
+                    href="https://groups.google.com/g/research-with-ai-agents"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary gap-2"
+                >
+                    <font-awesome-icon :icon="['fas', 'users']" />
+                    Join our Google Group
+                </a>
+            </div>
 
             <h2>Why not posting the Zoom link directly?</h2>
             <p>
@@ -104,6 +119,15 @@
                 >
                     <font-awesome-icon :icon="['fab', 'linkedin']" />
                     LinkedIn
+                </a>
+                <a
+                    href="https://groups.google.com/g/research-with-ai-agents"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm gap-2"
+                >
+                    <font-awesome-icon :icon="['fas', 'users']" />
+                    Google Group
                 </a>
             </div>
         </div>

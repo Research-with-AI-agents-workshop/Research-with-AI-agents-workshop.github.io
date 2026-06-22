@@ -28,6 +28,18 @@ const latestPastEvent = computed(() => {
 
 <template>
   <div>
+    <!-- Google Group Banner -->
+    <div class="bg-primary text-primary-content py-3 px-4 text-center text-sm">
+      <font-awesome-icon :icon="['fas', 'users']" class="mr-2" />
+      We now have a Google Group! Join to receive announcements and Zoom links for upcoming sessions.
+      <a
+        href="https://groups.google.com/g/research-with-ai-agents"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ml-2 underline font-semibold hover:opacity-80"
+      >Join the group →</a>
+    </div>
+
     <!-- Hero -->
     <section class="hero bg-neutral text-neutral-content py-16 md:py-24">
       <div class="hero-content text-center max-w-3xl">

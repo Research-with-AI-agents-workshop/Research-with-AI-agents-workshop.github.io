@@ -13,6 +13,9 @@
         <a href="https://www.linkedin.com/in/kaicheng-yang-43477213b/" target="_blank" rel="noopener noreferrer" class="text-base-content/60 hover:text-primary transition-colors">
           <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
         </a>
+        <a href="https://groups.google.com/g/research-with-ai-agents" target="_blank" rel="noopener noreferrer" class="text-base-content/60 hover:text-primary transition-colors" title="Join our Google Group">
+          <font-awesome-icon :icon="['fas', 'users']" size="lg" />
+        </a>
       </div>
     </div>
   </footer>
