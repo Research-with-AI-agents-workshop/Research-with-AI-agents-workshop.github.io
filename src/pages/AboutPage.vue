@@ -36,8 +36,7 @@
                         <p>
                             Assistant professor, School of Computing
                             <br />
-                            Binghamton University - State University of New York
-                            (SUNY)
+                            Binghamton University, State University of New York
                         </p>
                     </div>
                 </div>
@@ -64,8 +63,8 @@
                 co-organizing the workshop series.
             </p>
             <p>
-                The easiest way to stay in the loop and receive Zoom links for upcoming sessions
-                is to join our Google Group mailing list.
+                The easiest way to stay in the loop and receive announcements
+                for upcoming sessions is to join our Google Group mailing list.
             </p>
             <div class="not-prose mt-2">
                 <a
@@ -75,7 +74,7 @@
                     class="btn btn-primary gap-2"
                 >
                     <font-awesome-icon :icon="['fas', 'users']" />
-                    Join our Google Group
+                    View our Google Group
                 </a>
             </div>
 
@@ -89,8 +88,8 @@
 
             <h2>Stay Connected</h2>
             <p>
-                Follow the organizer on social media for updates on upcoming
-                sessions and related content.
+                Follow the organizer on social media or join the Google Group
+                for updates on upcoming sessions and related content.
             </p>
             <div class="not-prose flex flex-wrap gap-4 mt-4">
                 <a
